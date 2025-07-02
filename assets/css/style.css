@@ -48,6 +48,7 @@ img { max-width: 100%; height: auto; vertical-align: middle; }
 .nav a.active { color: var(--accent-color); }
 
 /* --- メインビジュアル (Hero) --- */
+/* --- メインビジュアル (Hero) --- */
 .hero {
     background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('https://images.unsplash.com/photo-1599491034288-6ab845211b63?q=80&w=2070&auto=format&fit=crop') center/cover;
     height: 75vh; display: flex; align-items: center; justify-content: center;
