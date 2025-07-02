@@ -46,7 +46,7 @@ img { max-width: 100%; height: auto; vertical-align: middle; }
 }
 .nav a:hover::after, .nav a.active::after { width: 100%; }
 .nav a.active { color: var(--accent-color); }
-
+ 
 /* --- メインビジュアル (Hero) --- */
 /* --- メインビジュアル (Hero) --- */
 .hero {
@@ -171,7 +171,7 @@ img { max-width: 100%; height: auto; vertical-align: middle; }
 }
 .faq-answer p { padding: 20px; margin: 0; }
 
-/* --- お問い合わせページ --- */
+/* --- お問い合わせページ --shskajhj- */
 .contact-container {
     display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center;
     max-width: 900px; margin: 0 auto;
