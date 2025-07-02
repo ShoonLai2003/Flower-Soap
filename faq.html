@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>よくある質問 | flower soap</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&family=Noto+Serif+JP:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <h1 class="site-title"><a href="index.html">flower soap</a></h1>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">ホーム</a></li>
+                    <li><a href="products.html">商品一覧</a></li>
+                    <li><a href="about.html">当店について</a></li>
+                    <li><a href="faq.html" class="active">よくある質問</a></li>
+                    <li><a href="contact.html">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="page-header">
+            <div class="container">
+                <h2 class="page-title">FAQ</h2>
+                <p>よくあるご質問</p>
+            </div>
+        </div>
+        <section class="section">
+            <div class="container">
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <button class="faq-question">商品の使用期限はどのくらいですか？</button>
+                        <div class="faq-answer">
+                            <p>当店の手作り石鹸は、保存料を一切使用しておりません。製造から1年以内を目安に、なるべくお早めにご使用いただくことをお勧めしております。開封後は、高温多湿を避け、水はけの良い場所で保管してください。</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">敏感肌でも使えますか？</button>
+                        <div class="faq-answer">
+                            <p>天然由来の優しい成分を主に使用しておりますが、すべての方にアレルギーが起こらないというわけではございません。ご心配な方は、ご使用前に腕の内側などでパッチテストを行っていただくことをお勧めします。</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">ギフトラッピングは可能ですか？</button>
+                        <div class="faq-answer">
+                            <p>はい、可能です。ギフト用のボックスやラッピングを有料にてご用意しております。ご注文の際に「ギフトラッピング希望」のオプションを選択してください。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">...</footer>
+    <script>
+        // FAQアコーディオンのスクリプト
+        const faqQuestions = document.querySelectorAll('.faq-question');
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                question.classList.toggle('active');
+                if (question.classList.contains('active')) {
+                    answer.style.maxHeight = answer.scrollHeight + 'px';
+                } else {
+                    answer.style.maxHeight = 0;
+                }
+            });
+        });
+    </script>
+</body>
+</html>
